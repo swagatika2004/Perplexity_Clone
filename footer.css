@@ -24,9 +24,15 @@ min-width:180px;
     gap:10px;
 }
 
-.logo img{
+.logo-icon{
     width:32px;
     height:32px;
+    border-radius:50%;
+    background:#1abc9c;
+    color:white;
+    display:grid;
+    place-items:center;
+    font-weight:bold;
 }
 
 .logo span{

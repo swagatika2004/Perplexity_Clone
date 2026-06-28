@@ -12,140 +12,257 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
 
-<section class="discover-section">
-
-    <!-- Suggestion Cards -->
-
-    <div class="suggestion-container">
-
-        <div class="suggestion-card">
-            <i class="fa-solid fa-code"></i>
-            <span>Learn React</span>
+<div class="app-shell">
+    <aside class="pf-sidebar">
+        <div class="pf-logo">
+            <i class="fa-solid fa-star-of-life"></i>
+            <span>perplexity</span>
         </div>
 
-        <div class="suggestion-card">
-            <i class="fa-solid fa-robot"></i>
-            <span>Artificial Intelligence</span>
+        <ul class="pf-menu">
+            <li class="pf-active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+            <li>
+                <i class="fa-regular fa-compass"></i>
+                <span>Discover</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-book"></i>
+                <span>Library</span>
+            </li>
+            <li>
+                <i class="fa-regular fa-folder"></i>
+                <span>Collections</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>History</span>
+            </li>
+        </ul>
+
+        <div class="pf-pro-box">
+            <h3>Try Pro</h3>
+            <p>Upgrade to unlock more Pro Search, file upload and image generation.</p>
+            <button>Learn More</button>
         </div>
 
-        <div class="suggestion-card">
-            <i class="fa-solid fa-globe"></i>
-            <span>Web Development</span>
+        <div class="pf-bottom">
+            <div class="pf-bottom-item">
+                <i class="fa-solid fa-download"></i>
+                <span>Download</span>
+            </div>
+            <div class="pf-bottom-item">
+                <i class="fa-regular fa-user"></i>
+                <span>Sign In</span>
+            </div>
         </div>
+    </aside>
 
-        <div class="suggestion-card">
-            <i class="fa-solid fa-newspaper"></i>
-            <span>Latest Tech News</span>
-        </div>
+    <div class="main-panel">
+        <section class="hero-page">
+            <nav class="navbar">
+                <ul>
+                    <li>Pro</li>
+                    <li>Enterprise</li>
+                    <li>API</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Store</li>
+                </ul>
+                <a href="signin.html" class="signin-btn">Sign In</a>
+            </nav>
 
-    </div>
+            <div class="hero">
+                <h1>Where knowledge begins</h1>
+                <p>Ask anything. Get answers backed by real-time sources.</p>
+            </div>
+        </section>
 
-    <!-- Discover Heading -->
+        <section class="search-panel">
+            <div class="search-box">
+                <input type="text" placeholder="Ask anything...">
 
-    <div class="heading">
-        <h2>Discover</h2>
-        <p>Explore trending stories and articles.</p>
-    </div>
+                <div class="bottom-row">
+                    <div class="left-icons">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button><i class="fa-solid fa-shapes"></i></button>
+                        <button><i class="fa-solid fa-globe"></i></button>
+                        <button><i class="fa-solid fa-paperclip"></i></button>
+                    </div>
 
-    <!-- Discover Cards -->
-
-    <div class="article-container">
-
-        <div class="article-card">
-            <img src="https://picsum.photos/400/250?1">
-
-            <div class="content">
-                <h4>Technology</h4>
-
-                <h3>Top React Features in 2026</h3>
-
-                <p>
-                    Learn the newest React features and best practices
-                    for building modern applications.
-                </p>
-
-                <button>Read More</button>
+                    <div class="right-icons">
+                        <button class="voice"><i class="fa-solid fa-microphone"></i></button>
+                        <button class="send"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
             </div>
 
-        </div>
+            <div class="menu">
+                <button class="active"><i class="fa-solid fa-magnifying-glass"></i> Ask</button>
+                <button><i class="fa-solid fa-brain"></i> Research</button>
+                <button><i class="fa-solid fa-pen"></i> Write</button>
+                <button><i class="fa-solid fa-chart-line"></i> Analyze</button>
+                <button><i class="fa-solid fa-terminal"></i> Solve</button>
+            </div>
+        </section>
 
+        <section class="signin-panel">
+            <div class="signin-card">
+                <h2>Sign In</h2>
+                <form>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button>Login</button>
+                </form>
+            </div>
+        </section>
 
-        <div class="article-card">
+        <section class="discover-section">
+            <div class="suggestion-container">
+                <div class="suggestion-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Learn React</span>
+                </div>
 
-            <img src="https://picsum.photos/400/250?2">
+                <div class="suggestion-card">
+                    <i class="fa-solid fa-robot"></i>
+                    <span>Artificial Intelligence</span>
+                </div>
 
-            <div class="content">
+                <div class="suggestion-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Web Development</span>
+                </div>
 
-                <h4>Artificial Intelligence</h4>
-
-                <h3>How AI is Changing Programming</h3>
-
-                <p>
-                    Discover how AI tools are helping developers
-                    write better code faster.
-                </p>
-
-                <button>Read More</button>
-
+                <div class="suggestion-card">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span>Latest Tech News</span>
+                </div>
             </div>
 
-        </div>
-
-
-        <div class="article-card">
-
-            <img src="https://picsum.photos/400/250?3">
-
-            <div class="content">
-
-                <h4>Programming</h4>
-
-                <h3>JavaScript ES2026 Guide</h3>
-
-                <p>
-                    Understand the latest JavaScript features with
-                    practical examples.
-                </p>
-
-                <button>Read More</button>
-
+            <div class="heading">
+                <h2>Discover</h2>
+                <p>Explore trending stories and articles.</p>
             </div>
 
-        </div>
+            <div class="article-container">
+                <div class="article-card">
+                    <img src="https://picsum.photos/400/250?1">
+                    <div class="content">
+                        <h4>Technology</h4>
+                        <h3>Top React Features in 2026</h3>
+                        <p>Learn the newest React features and best practices for building modern applications.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
 
+                <div class="article-card">
+                    <img src="https://picsum.photos/400/250?2">
+                    <div class="content">
+                        <h4>Artificial Intelligence</h4>
+                        <h3>How AI is Changing Programming</h3>
+                        <p>Discover how AI tools are helping developers write better code faster.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
 
-        <div class="article-card">
+                <div class="article-card">
+                    <img src="https://picsum.photos/400/250?3">
+                    <div class="content">
+                        <h4>Programming</h4>
+                        <h3>JavaScript ES2026 Guide</h3>
+                        <p>Understand the latest JavaScript features with practical examples.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
 
-            <img src="https://picsum.photos/400/250?4">
-
-            <div class="content">
-
-                <h4>Cyber Security</h4>
-
-                <h3>Protect Your Online Identity</h3>
-
-                <p>
-                    Learn essential security practices to stay safe
-                    while browsing the internet.
-                </p>
-
-                <button>Read More</button>
-
+                <div class="article-card">
+                    <img src="https://picsum.photos/400/250?4">
+                    <div class="content">
+                        <h4>Cyber Security</h4>
+                        <h3>Protect Your Online Identity</h3>
+                        <p>Learn essential security practices to stay safe while browsing the internet.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
             </div>
 
-        </div>
+            <div class="view-btn">
+                <button>View All</button>
+            </div>
+        </section>
 
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">P</div>
+                        <span>Perplexity</span>
+                    </div>
+                    <p>Where knowledge begins.</p>
+                    <p>AI-powered answer engine.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Pro</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Subscribe to our newsletter</h3>
+                    <p>Get the latest updates and tips from Perplexity.</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">X</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+
+            <div class="copyright">
+                © 2026 Perplexity Clone | Developed by TECH TITANS
+            </div>
+        </footer>
     </div>
-
-    <div class="view-btn">
-        <button>View All</button>
-    </div>
-
-</section>
+</div>
 
 </body>
 </html>
