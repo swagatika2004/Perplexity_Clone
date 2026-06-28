@@ -1,0 +1,292 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:radial-gradient(circle at top,#0b1723,#060a0f 70%);
+    min-height:100vh;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:92%;
+    max-width:1600px;
+    text-align:center;
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+h1{
+    font-size:72px;
+    font-weight:300;
+    letter-spacing:-2px;
+    margin-bottom:12px;
+}
+
+.subtitle{
+    font-size:18px;
+    color:#9ea4ab;
+    margin-bottom:34px;
+}
+
+/* ==========================
+   SEARCH BOX
+========================== */
+
+.search-box{
+    width:100%;
+    max-width:1550px;
+    height:170px;
+    margin:auto;
+    background:#171c22;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:22px 26px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow:0 15px 45px rgba(0,0,0,.35);
+}
+
+.search-box input{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:400;
+}
+
+.search-box input::placeholder{
+    color:#8d949c;
+}
+
+/* ==========================
+   BOTTOM ROW
+========================== */
+
+.bottom-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* ==========================
+   LEFT ICONS
+========================== */
+
+.left-icons{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.left-icons button{
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:14px;
+    background:#232931;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.left-icons button:not(:first-child){
+    background:transparent;
+}
+
+.left-icons button:hover{
+    background:#2d343d;
+}
+
+/* ==========================
+   RIGHT ICONS
+========================== */
+
+.right-icons{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.voice{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.08);
+    background:#232931;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.voice:hover{
+    background:#313842;
+}
+
+.send{
+    width:52px;
+    height:52px;
+    border:none;
+    border-radius:50%;
+    background:#10c4e6;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.send:hover{
+    transform:scale(1.06);
+}
+
+/* ==========================
+   MENU BUTTONS
+========================== */
+
+.menu{
+    margin-top:34px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.menu button{
+    background:#11161d;
+    color:#d8d8d8;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:14px 28px;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu button:hover{
+    border-color:#10c4e6;
+    color:#fff;
+}
+
+.menu button i{
+    font-size:22px;
+}
+
+.menu .active{
+    color:#10c4e6;
+    border:2px solid #10c4e6;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    h1{
+        font-size:56px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .search-box{
+        height:150px;
+    }
+
+    .menu button{
+        font-size:18px;
+        padding:12px 22px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    h1{
+        font-size:42px;
+    }
+
+    .subtitle{
+        font-size:15px;
+        margin-bottom:25px;
+    }
+
+    .search-box{
+        height:140px;
+        padding:18px;
+    }
+
+    .search-box input{
+        font-size:18px;
+    }
+
+    .left-icons button,
+    .voice{
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
+
+    .send{
+        width:48px;
+        height:48px;
+        font-size:22px;
+    }
+
+    .menu{
+        gap:12px;
+    }
+
+    .menu button{
+        font-size:16px;
+        padding:12px 18px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    h1{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    .menu{
+        justify-content:center;
+    }
+
+    .menu button{
+        width:100%;
+        justify-content:center;
+    }
+
+}
