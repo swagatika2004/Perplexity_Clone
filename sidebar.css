@@ -1,0 +1,117 @@
+/* ===== Sidebar ===== */
+
+.pf-sidebar{
+    width:250px;
+    height:100vh;
+    background:#17191d;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:20px 15px;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.pf-sidebar *{
+    box-sizing:border-box;
+}
+
+.pf-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:26px;
+    color:#00c8ff;
+}
+
+.pf-logo span{
+    color:#fff;
+    font-size:30px;
+    font-weight:500;
+}
+
+.pf-menu{
+    list-style:none;
+    margin:30px 0;
+    padding:0;
+}
+
+.pf-menu li{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    margin-bottom:8px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:17px;
+}
+
+.pf-menu li:hover{
+    background:#26292f;
+}
+
+.pf-active{
+    background:#26292f;
+}
+
+.pf-menu i{
+    width:20px;
+    text-align:center;
+}
+
+.pf-pro-box{
+    background:#202328;
+    padding:18px;
+    border-radius:15px;
+}
+
+.pf-pro-box h3{
+    margin:0 0 10px;
+    font-size:18px;
+}
+
+.pf-pro-box p{
+    color:#bdbdbd;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.pf-pro-box button{
+    width:100%;
+    padding:10px;
+    border:1px solid #00c8ff;
+    border-radius:10px;
+    background:#2b2f36;
+    color:#00c8ff;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.pf-pro-box button:hover{
+    background:#363b44;
+}
+
+.pf-bottom{
+    margin-top:20px;
+}
+
+.pf-bottom-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:14px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.pf-bottom-item:hover{
+    background:#26292f;
+}
+
+/* End of sidebar */
