@@ -8,6 +8,8 @@
 body{
     background:#020817;
     color:white;
+    min-height:100vh;
+    overflow-x:hidden;
 }
 
 .app-shell{
@@ -343,7 +345,8 @@ body{
     align-items:center;
     gap:10px;
     cursor:pointer;
-    min-width:110px;
+    min-width:0;
+    flex:1 1 140px;
 }
 
 .menu .active{
@@ -637,4 +640,64 @@ body{
     width:100%;
 }
 
+}
+@media(max-width:600px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:0.95rem;
+        max-width:100%;
+        padding:0 10px;
+    }
+
+    .search-box{
+        padding:16px;
+    }
+
+    .bottom-row{
+        gap:10px;
+    }
+
+    .left-icons,
+    .right-icons{
+        width:100%;
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+
+    .left-icons button,
+    .voice,
+    .send{
+        width:42px;
+        height:42px;
+    }
+
+    .menu{
+        gap:10px;
+    }
+
+    .menu button{
+        flex:1 1 calc(50% - 10px);
+        min-width:0;
+    }
+
+    .view-btn button{
+        width:100%;
+        max-width:260px;
+    }
+
+    .suggestion-card{
+        width:100%;
+        justify-content:center;
+    }
+
+    .article-card{
+        min-width:0;
+    }
+
+    .content h3{
+        font-size:1.15rem;
+    }
 }

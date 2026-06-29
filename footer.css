@@ -145,3 +145,30 @@ margin:8px;
 }
 
 }
+
+@media(max-width:576px){
+    .footer{
+        padding:1.25rem 1rem;
+    }
+
+    .footer-container{
+        gap:1rem;
+    }
+
+    .footer-section{
+        min-width:auto;
+    }
+
+    .social-icons{
+        margin-top:1.5rem;
+    }
+
+    .social-icons a{
+        margin:0.5rem;
+        display:inline-block;
+    }
+
+    .copyright{
+        font-size:0.9rem;
+    }
+}

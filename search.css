@@ -17,6 +17,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    overflow-x:hidden;
 }
 
 .container{
@@ -290,3 +291,40 @@ h1{
     }
 
 }
+
+@media(max-width:768px){
+    .bottom-row{
+        flex-direction:column;
+        gap:12px;
+        align-items:stretch;
+    }
+
+    .left-icons,
+    .right-icons{
+        width:100%;
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+
+    .search-box{
+        padding:18px;
+    }
+
+    .menu button{
+        flex:1 1 40%;
+        min-width:130px;
+    }
+}
+
+@media(max-width:576px){
+    .left-icons,
+    .right-icons{
+        gap:10px;
+    }
+
+    .menu button{
+        width:100%;
+        min-width:0;
+    }
+}
+

@@ -99,6 +99,29 @@ button {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navbar ul {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     body {
         padding: 1rem;
