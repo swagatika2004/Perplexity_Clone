@@ -4,84 +4,120 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
-background-color: rgb(2, 8,23);
+    background-color: rgb(2, 8, 23);
     color: white;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 1.5rem;
+    overflow-x: hidden;
 }
 
 .main {
     min-height: 800px;
-    padding: 30px 60px;
+    padding: clamp(1rem, 3vw, 2rem);
 }
-
 
 .navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 40px;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar li {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .signin-btn {
-    padding: 12px 24px;
+    padding: 0.75rem 1.25rem;
     border: none;
     border-radius: 10px;
     background: rgb(6, 182, 212);
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
-
 
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 4rem;
     text-align: center;
+    padding: 0 0.5rem;
 }
 
 .hero h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
+    font-size: clamp(2.2rem, 6vw, 4.3rem);
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 24px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: rgb(203, 213, 225);
 }
-body {
-    font-family: Arial, sans-serif;
-    background: #020817;
-    color: white;
-    text-align: center;
-    padding-top: 100px;
+
+form {
+    max-width: 20rem;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 input {
-    padding: 12px;
-    width: 250px;
-    margin: 10px;
+    padding: 0.8rem 0.9rem;
+    width: 100%;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #334155;
+    background: #111827;
+    color: white;
 }
 
 button {
-    padding: 12px 24px;
+    padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 8px;
     background: #06b6d4;
     color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .main {
+        padding: 0.75rem;
+    }
+
+    .hero {
+        margin-top: 2.5rem;
+    }
+
+    form {
+        width: 100%;
+    }
 }
